@@ -1,0 +1,10 @@
+yarn init -y
+
+el equivalente en npm es
+npm init -yarn
+
+yarn add esbuild --dev
+
+
+el equivalente en npm es
+npm install esbuild -D

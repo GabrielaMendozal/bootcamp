@@ -1,0 +1,14 @@
+{
+  "name": "bootcamp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node config/esbuild.js"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "esbuild": "^0.14.53"
+  }
+}
