@@ -5,10 +5,16 @@
   "type": "module",
   "license": "MIT",
   "scripts": {
-    "dev": "node config/esbuild.js"
+    "dev": "node config/esbuild.js",
+    "dbjson": "json-server --watch mock/db.json"
   },
   "dependencies": {
     "axios": "^0.27.2",
+    "dayjs": "^1.11.4",
+    "dexie": "^3.2.2",
     "esbuild": "^0.14.53"
+  },
+  "devDependencies": {
+    "json-server": "^0.17.0"
   }
 }

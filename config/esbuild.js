@@ -1,13 +1,19 @@
 import esbuild from 'esbuild'
 
 //require('esbuild').build()
+const entryPoints = [
+    'src/sw.js', 'src/scripts/scrapper.js',
+    'src/scripts/pop.js',
+    'src/scripts/scrapCandidates.js'
+
+]
 esbuild.build({
-    entryPoints: ['src/sw.js', 'src/scripts/scrapper.js'],
+    entryPoints,
     watch: true,
     bundle: true,
     outdir: 'dist',
     //target: 'chrome',
-    minify: true,
+    //minify: true,
     allowOverwrite: true
 })
     .then(response => console.log(JSON.stringify(response)))
